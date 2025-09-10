@@ -1,0 +1,96 @@
+/*ESERCIZI:
+Partendo dal file allegato ...*/
+
+
+/*Crea un selettore per selezionare I'<h1> nella sezione "hero", ovvero nel jumbotron*/
+.jumbotron h1{
+    color: rgb(96, 18, 18);
+    text-shadow: 2px 2px 4px rgb(96,18,18,0.8);
+    font-weight: 400;
+}
+/*Crea un selettore per selezionare tutti i figli dell'elemento navbar*/
+nav span{
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: rgb(50, 49, 49);
+  color: rgb(50, 49, 49);
+}
+/*Crea un selettore per selezionare il link "Continua a leggere" del jumbotron*/
+.jumbotron p>a{
+    color: rgb(96, 18, 18,0.7);
+    font-weight: lighter;
+}
+
+.jumbotron p>a:hover{
+    color: rgb(96, 18, 18);
+}
+/*Crea un selettore per selezionare il primo blog post*/
+.blog-main .blog-post:first-of-type{
+   background-color: rgba(187, 166, 166, 0.323);
+   border-radius: 5px;
+}
+
+.blog-main .blog-post:first-of-type .blog-post-title{
+    color: rgb(96, 18, 18);
+    text-shadow: 3px 3px 5px rgb(96, 18, 18,0.7);
+}
+/*Crea un selettore per selezionare I'<hr> del primo blog post e colorarlo di rosso*/
+.blog-main .blog-post:first-of-type hr{
+    height: 5px;
+    background: linear-gradient(to right, rgb(96,18,18,0), rgb(96, 18, 18));
+}
+/*Crea un selettore per selezionare i link pari della navbar*/
+.nav span:nth-of-type(even){
+    text-decoration: none;
+}
+/*Crea un selettore per selezionare tutti gli <li> della prima "ordered-list" della sidebar ("Archivio")*/
+aside .p-4:nth-of-type(2) ol li{
+    color: rgb(96, 18, 18);
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+aside .p-4:nth-of-type(2) ol li a{
+    color: rgb(96, 18, 18,0.7);
+}
+/*Crea un selettore per selezionare l'autore del secondo blog post*/
+main .blog-main .blog-post:nth-of-type(2) .blog-post-meta a{
+   color: rgb(96, 18, 18);
+   font-weight: 900;
+}
+/*Crea un selettore per selezionare il secondo <li> della lista del terzo blog post*/
+main .blog-main .blog-post:nth-of-type(3) ul li:nth-of-type(2){
+    font-weight: 700;
+  list-style-type:circle;
+}
+/*Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra*/
+.float-right{
+    background-color: rgb(96, 18, 18, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+.float-right:hover{
+    background-color: rgb(96, 18, 18,0.4);
+    padding: 20px;
+    color: rgb(96, 18, 18);
+}
+/*Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso*/
+.blog-pagination .disabled{
+   color: blue;
+}
+/*Crea un selettore per selezionare il secondo link del footer*/
+footer p a:nth-of-type(2){
+   text-shadow: 1px 1px blue;
+}
+
+.blog-post-meta{
+    background-color: rgb(221, 249, 249);
+}
+
+.col a{
+    background-color: rgb(242, 213, 213);
+}
+
+.card-text{
+    background-color: rgb(227, 216, 238);
+}
