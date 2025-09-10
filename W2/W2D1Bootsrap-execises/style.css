@@ -1,6 +1,7 @@
 
 nav ul li a{
     text-decoration: none;
+    list-style: none;
 }
 
 nav .btn:hover{
