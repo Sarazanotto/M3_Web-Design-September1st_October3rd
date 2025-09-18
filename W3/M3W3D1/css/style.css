@@ -42,3 +42,7 @@ button{
     text-overflow: ellipsis;
 }
 
+.dropdown-item:hover{
+    background-color: #354152;
+        text-decoration: none;
+}

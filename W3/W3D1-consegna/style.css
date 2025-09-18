@@ -1,3 +1,6 @@
+
+
+
 .nav-right img{
     width: 40px;
 }
@@ -13,4 +16,16 @@ width: 50px;
 
 .down-hero .bg-icon i{
     color: #d3a472;
+}
+
+.card-footer img{
+    width: 40px;
+}
+
+.section-card{
+    background-color: #f5f4f8;
+}
+
+.card{
+    width: 18rem;
 }
