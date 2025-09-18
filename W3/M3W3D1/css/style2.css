@@ -1,0 +1,31 @@
+.cardSeeMore{
+max-width: 300px ;
+border-radius: 5px;
+}
+
+.cardSeeMore img{
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.cardSeeMore:hover{
+   transform: translate(0) scale(1.1);
+   z-index: 5;
+}
+
+.text-hover{
+    bottom: 0;
+    left: 0;
+    background-color: #1e242ebb;
+    opacity: 0;
+    text-align: center;
+    border: 1px solid #ffffff61;
+    border-radius: 5px;
+
+}
+
+.cardSeeMore:hover .text-hover{
+    opacity: 1;
+    z-index: 20;
+    bottom: 0;
+}

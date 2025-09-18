@@ -1,0 +1,16 @@
+.nav-right img{
+    width: 40px;
+}
+.hero{
+    background-color: #7052f8;
+}
+
+.down-hero .bg-icon{
+  background-color: #ffeeda;
+height: 50px;
+width: 50px;
+}
+
+.down-hero .bg-icon i{
+    color: #d3a472;
+}

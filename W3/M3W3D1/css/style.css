@@ -1,0 +1,44 @@
+body{
+    background-color: #1e242e;
+    color: #b6b8bd;
+     font-family: 'Montserrat', sans-serif;
+}
+nav img{
+    height: 30px;
+}
+
+.dropdown-item{
+    color: #b6b8bd;
+}
+.dropdown-item:hover{
+    color: #144ad2;
+}
+.nav-item a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #fff;
+}
+.nav-link:hover{
+    color: #fff;
+}
+.dropdown-menu{
+    background-color: #242c38;
+}
+button{
+    background-color: #1e242e;
+    border: none;
+    color: #fff;
+}
+
+.user .bi-person-circle, .bi-search {
+    color: #b6b8bd;
+}
+
+.name-user{
+    display: inline-block;
+    width: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+

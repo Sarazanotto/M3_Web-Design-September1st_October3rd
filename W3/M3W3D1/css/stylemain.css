@@ -1,0 +1,73 @@
+
+/*JUMBO*/
+.carousel-item img{
+    max-height: 600px;
+    min-height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/*card generale*/
+.title span, .title a{
+    color: #0F79AF;
+}
+
+.containerCard{
+   max-width: 350px;
+   height: 150px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.containerCard img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   display: block;
+ 
+}
+.containerCard .logo-img{
+    background-color: #69a7df;
+    font-weight: bold;
+    border-radius: 0 0 10px 0;
+    border-bottom: 4px solid #1e242e;
+      border-right: 3px solid #1e242e;
+    padding: 1px;
+}
+/*scroll*/
+.scrollContainer::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
+
+.scroll{
+    position: relative;
+}
+.shadow-scroll{
+   position: absolute;
+   content: "";
+    height: 150px;
+    width: 100%;
+    bottom: 0;
+    right:0;
+ background:linear-gradient(to left, #000,#00000000,#00000000, #00000000);
+    }
+   
+
+/*carousel*/
+.carousel-shadow-right::after, .carousel-shadow-left::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+   
+}
+.carousel-shadow-left::after{
+   top: 0;
+   left: 0;
+    background:linear-gradient(to right, #000,#00000000,#00000000, #00000000);
+}
+.carousel-shadow-right::after{
+    top: 0;
+    right:0;
+     background:linear-gradient(to left, #000,#00000000,#00000000, #00000000);
+}
+
