@@ -1,0 +1,22 @@
+
+nav ul li a{
+    text-decoration: none;
+    list-style: none;
+}
+
+nav .btn:hover{
+    background-color: inherit;
+}
+
+
+
+
+
+.add-mail .btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+section p:last-child {
+    font-size: 14px;
+}

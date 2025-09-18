@@ -1,0 +1,82 @@
+body{
+height: 100%;
+    background: linear-gradient(#107616, black);
+}
+
+.sectionHome, .sectionAlbum, .sectionSpecial .detailsAlbumSpecial{
+    color: #fff;
+}
+
+
+/*NAVBAR*/
+.nav-link, .navbar-brand, nav button i{
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 100;
+}
+
+.nav-link:hover, .navbar-brand:hover{
+   color: rgb(0, 134, 18);
+}
+
+.sectionHome{
+ padding: 50px;
+}
+
+.sectionAlbum h2, .sectionSpecial h2{
+    color: #fff;
+    text-align: center;
+    border-top:1px solid #fff;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/*SECTION ALBUM*/
+
+.card-title{
+    color: #107616;
+    font-weight: bold;
+}
+
+.card{
+    box-shadow: 2px 1px 5px #000;
+}
+
+
+
+/*SECTION-SPECIAL*/
+.imageSpecialAlbum{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.detailsAlbumSpecial li{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+}
+
+ .detailsAlbumSpecial .dropdown-menu{
+    display: none;
+    background-color: #107616;
+    
+    box-shadow:-1px -1px 2px #abefb0 inset,
+                 1px 1px 2px  #9af1a0 inset;
+ }
+ .detailsAlbumSpecial .dropdown-menu li{
+    color: #000;
+ }
+
+ .detailsAlbumSpecial .dropdown:hover .dropdown-menu,
+ .detailsAlbumSpecial .dropdown.open .dropdown-menu{
+    display: block;
+ }
+
+section[id]{
+    scroll-margin-top: 80px;
+}
+
+ 

@@ -1,0 +1,41 @@
+body{
+     font-family: "Geologica", sans-serif;
+
+
+}
+nav{
+    background: linear-gradient(to top, rgb(157, 186, 254), rgb(8, 41, 255));
+}
+
+nav img{
+    max-width: 100px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: aliceblue;
+}
+.nav-link:hover {
+color: #00b7ff;
+font-weight: bold;
+}
+
+.jumbotron img{
+   display: block;
+  max-height: 850px;
+}
+.jumbotron h1,p{
+    color:#000 ;
+}
+
+.card{
+    max-width: 300px;
+    max-height: 350px;
+    background-color: #ffffff;
+    border: none;
+}
+.card img{
+    max-height: 250px;
+    width: auto;
+    border-radius: 10px;
+}
