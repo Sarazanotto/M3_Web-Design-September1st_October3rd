@@ -27,14 +27,71 @@
         <img src="./assets/logo.svg" alt="" />
 
         <div class="nav-right d-flex align-items-center order-lg-2">
-          <button class="btn btn-outline-secondary me-2" type="button">
-            <i class="bi bi-search"></i>
+          <button
+            class="btn-bell btn btn-outline-secondary me-2 rounded-circle border-0 position-relative"
+            type="button"
+          >
+            <i class="bi bi-bell"></i>
           </button>
-          <img
-            src="./assets/avatar-1.jpg"
-            alt="User"
-            class="rounded-circle me-2"
-          />
+
+          <div class="dropdown">
+            <button
+              class="btn border-0 bg-trasparent"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <div class="user-online position-relative">
+                <img
+                  src="./assets/avatar-1.jpg"
+                  alt="User"
+                  class="rounded-circle me-2"
+                />
+              </div>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end p-2">
+              <li class="">
+                <div class="d-flex gap-2">
+                  <div class="">
+                    <img
+                      src="./assets/avatar-1.jpg"
+                      alt="User"
+                      class="rounded-circle me-2"
+                    />
+                  </div>
+                  <p>
+                    Annette Black <br /><span class="small text-muted"
+                      >annette@geeksui.com</span
+                    >
+                  </p>
+                </div>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <button class="dropdown-item" type="button">
+                  <i class="bi bi-person"></i>
+                  <span>Profile</span>
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">
+                  <i class="bi bi-star"></i> <span>Subscripion</span>
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">
+                  <i class="bi bi-gear"></i> <span>Settings</span>
+                </button>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li class="">
+                <button class="dropdown-item" type="button">
+                  <i class="bi bi-box-arrow-right"></i> <span>Sign Out</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
           <button
             class="navbar-toggler"
             type="button"
@@ -50,17 +107,69 @@
 
         <div class="collapse navbar-collapse order-lg-1" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Browse
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">text1</a></li>
+                <li><a class="dropdown-item" href="#">text2</a></li>
+                <li><a class="dropdown-item" href="#">text3</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Landings
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">text1</a></li>
+                <li><a class="dropdown-item" href="#">text2</a></li>
+                <li><a class="dropdown-item" href="#">text3</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">text1</a></li>
+                <li><a class="dropdown-item" href="#">text2</a></li>
+                <li><a class="dropdown-item" href="#">text3</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Accounts
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">text1</a></li>
+                <li><a class="dropdown-item" href="#">text2</a></li>
+                <li><a class="dropdown-item" href="#">text3</a></li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -144,496 +253,1296 @@
       </div>
     </section>
 
-    <!--<section class="section-card container-fluid p-4 p-lg-5">
-      <h3 class="pb-3">Recommended to you</h3>
-      <div class="row g-3">
-        <div class="col-6 col-lg-3 d-flex justify-content-lg-between">
-          <div class="card ">
-            <img
-              src="./assets/course-graphql.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
-              <p class="card-text">
-                GraphQL: introduction to graphQL for beginners
-              </p>
-              <div class="d-flex align-items-center text-muted small gap-2">
-                <i class="bi bi-clock"></i>2h 40m
-                <i class="bi bi-reception-4 text-primary"></i>Advance
-              </div>
-              <div class="d-flex align-items-center text-warning">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"> </i
-                ><i class="bi bi-star-half"> </i><i class="bi bi-star"></i
-                ><i class="bi bi-star"></i
-                ><span class="text-muted smallS">(1,500)</span>
-              </div>
-              <p>$500 <del class="text-muted small">$600</del></p>
-            </div>
-            <div class="card-footer d-flex align-items-center justify-content-between px-4">
-              <div class="d-flex align-items-center gap-2">
-                <img class="rounded-circle" src="./assets/avatar-1.jpg" alt="">
-                <p class="text-muted small m-0"> Brooklyn Simmons</p>
-              </div>
-              <i class="bi bi-bookmark text-muted"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-lg-3"><div class="card ">
-            <img
-              src="./assets/course-graphql.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
-              <p class="card-text">
-                GraphQL: introduction to graphQL for beginners
-              </p>
-              <div class="d-flex align-items-center text-muted small gap-2">
-                <i class="bi bi-clock"></i>2h 40m
-                <i class="bi bi-reception-4 text-primary"></i>Advance
-              </div>
-              <div class="d-flex align-items-center text-warning">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"> </i
-                ><i class="bi bi-star-half"> </i><i class="bi bi-star"></i
-                ><i class="bi bi-star"></i
-                ><span class="text-muted smallS">(1,500)</span>
-              </div>
-              <p>$500 <del class="text-muted small">$600</del></p>
-            </div>
-            <div class="card-footer d-flex align-items-center justify-content-between px-4">
-              <div class="d-flex align-items-center gap-2">
-                <img class="rounded-circle" src="./assets/avatar-1.jpg" alt="">
-                <p class="text-muted small m-0"> Brooklyn Simmons</p>
-              </div>
-              <i class="bi bi-bookmark text-muted"></i>
-            </div>
-          </div></div>
-        <div class="col-6 col-lg-3"><div class="card ">
-            <img
-              src="./assets/course-graphql.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
-              <p class="card-text">
-                GraphQL: introduction to graphQL for beginners
-              </p>
-              <div class="d-flex align-items-center text-muted small gap-2">
-                <i class="bi bi-clock"></i>2h 40m
-                <i class="bi bi-reception-4 text-primary"></i>Advance
-              </div>
-              <div class="d-flex align-items-center text-warning">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"> </i
-                ><i class="bi bi-star-half"> </i><i class="bi bi-star"></i
-                ><i class="bi bi-star"></i
-                ><span class="text-muted smallS">(1,500)</span>
-              </div>
-              <p>$500 <del class="text-muted small">$600</del></p>
-            </div>
-            <div class="card-footer d-flex align-items-center justify-content-between px-4">
-              <div class="d-flex align-items-center gap-2">
-                <img class="rounded-circle" src="./assets/avatar-1.jpg" alt="">
-                <p class="text-muted small m-0"> Brooklyn Simmons</p>
-              </div>
-              <i class="bi bi-bookmark text-muted"></i>
-            </div>
-          </div></div>
-        <div class="col-6 col-lg-3"><div class="card ">
-            <img
-              src="./assets/course-graphql.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
-              <p class="card-text">
-                GraphQL: introduction to graphQL for beginners
-              </p>
-              <div class="d-flex align-items-center text-muted small gap-2">
-                <i class="bi bi-clock"></i>2h 40m
-                <i class="bi bi-reception-4 text-primary"></i>Advance
-              </div>
-              <div class="d-flex align-items-center text-warning">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"> </i
-                ><i class="bi bi-star-half"> </i><i class="bi bi-star"></i
-                ><i class="bi bi-star"></i
-                ><span class="text-muted smallS">(1,500)</span>
-              </div>
-              <p>$500 <del class="text-muted small">$600</del></p>
-            </div>
-            <div class="card-footer d-flex align-items-center justify-content-between px-4">
-              <div class="d-flex align-items-center gap-2">
-                <img class="rounded-circle" src="./assets/avatar-1.jpg" alt="">
-                <p class="text-muted small m-0"> Brooklyn Simmons</p>
-              </div>
-              <i class="bi bi-bookmark text-muted"></i>
-            </div>
-          </div></div>
-      </div>
-    </section>-->
-
-    <div id="carouselExampleIndicators" class="carousel slide">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row flex-nowrap">
-            <div class="col-6 col-lg-3">
-              <div class="card">
-                <img
-                  src="./assets/course-graphql.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
-                  <p class="card-text">
-                    GraphQL: introduction to graphQL for beginners
-                  </p>
-                  <div class="d-flex align-items-center text-muted small gap-2">
-                    <i class="bi bi-clock"></i>2h 40m
-                    <i class="bi bi-reception-4 text-primary"></i>Advance
-                  </div>
-                  <div class="d-flex align-items-center text-warning">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"> </i
-                    ><i class="bi bi-star-half"> </i><i class="bi bi-star"></i
-                    ><i class="bi bi-star"></i
-                    ><span class="text-muted smallS">(1,500)</span>
-                  </div>
-                  <p>$500 <del class="text-muted small">$600</del></p>
-                </div>
-                <div
-                  class="card-footer d-flex align-items-center justify-content-between px-4"
-                >
-                  <div class="d-flex align-items-center gap-2">
-                    <img
-                      class="rounded-circle"
-                      src="./assets/avatar-1.jpg"
-                      alt=""
-                    />
-                    <p class="text-muted small m-0">Brooklyn Simmons</p>
-                  </div>
-                  <i class="bi bi-bookmark text-muted"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-lg-3">
-              <div class="card">
-                <img
-                  src="./assets/course-graphql.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
-                  <p class="card-text">
-                    GraphQL: introduction to graphQL for beginners
-                  </p>
-                  <div class="d-flex align-items-center text-muted small gap-2">
-                    <i class="bi bi-clock"></i>2h 40m
-                    <i class="bi bi-reception-4 text-primary"></i>Advance
-                  </div>
-                  <div class="d-flex align-items-center text-warning">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"> </i
-                    ><i class="bi bi-star-half"> </i><i class="bi bi-star"></i
-                    ><i class="bi bi-star"></i
-                    ><span class="text-muted smallS">(1,500)</span>
-                  </div>
-                  <p>$500 <del class="text-muted small">$600</del></p>
-                </div>
-                <div
-                  class="card-footer d-flex align-items-center justify-content-between px-4"
-                >
-                  <div class="d-flex align-items-center gap-2">
-                    <img
-                      class="rounded-circle"
-                      src="./assets/avatar-1.jpg"
-                      alt=""
-                    />
-                    <p class="text-muted small m-0">Brooklyn Simmons</p>
-                  </div>
-                  <i class="bi bi-bookmark text-muted"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-lg-3">
-              <div class="card">
-                <img
-                  src="./assets/course-graphql.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
-                  <p class="card-text">
-                    GraphQL: introduction to graphQL for beginners
-                  </p>
-                  <div class="d-flex align-items-center text-muted small gap-2">
-                    <i class="bi bi-clock"></i>2h 40m
-                    <i class="bi bi-reception-4 text-primary"></i>Advance
-                  </div>
-                  <div class="d-flex align-items-center text-warning">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"> </i
-                    ><i class="bi bi-star-half"> </i><i class="bi bi-star"></i
-                    ><i class="bi bi-star"></i
-                    ><span class="text-muted smallS">(1,500)</span>
-                  </div>
-                  <p>$500 <del class="text-muted small">$600</del></p>
-                </div>
-                <div
-                  class="card-footer d-flex align-items-center justify-content-between px-4"
-                >
-                  <div class="d-flex align-items-center gap-2">
-                    <img
-                      class="rounded-circle"
-                      src="./assets/avatar-1.jpg"
-                      alt=""
-                    />
-                    <p class="text-muted small m-0">Brooklyn Simmons</p>
-                  </div>
-                  <i class="bi bi-bookmark text-muted"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-lg-3">
-              <div class="card">
-                <img
-                  src="./assets/course-graphql.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
-                  <p class="card-text">
-                    GraphQL: introduction to graphQL for beginners
-                  </p>
-                  <div class="d-flex align-items-center text-muted small gap-2">
-                    <i class="bi bi-clock"></i>2h 40m
-                    <i class="bi bi-reception-4 text-primary"></i>Advance
-                  </div>
-                  <div class="d-flex align-items-center text-warning">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"> </i
-                    ><i class="bi bi-star-half"> </i><i class="bi bi-star"></i
-                    ><i class="bi bi-star"></i
-                    ><span class="text-muted smallS">(1,500)</span>
-                  </div>
-                  <p>$500 <del class="text-muted small">$600</del></p>
-                </div>
-                <div
-                  class="card-footer d-flex align-items-center justify-content-between px-4"
-                >
-                  <div class="d-flex align-items-center gap-2">
-                    <img
-                      class="rounded-circle"
-                      src="./assets/avatar-1.jpg"
-                      alt=""
-                    />
-                    <p class="text-muted small m-0">Brooklyn Simmons</p>
-                  </div>
-                  <i class="bi bi-bookmark text-muted"></i>
-                </div>
-              </div>
-            </div>         
-          </div>
-        </div>
-
-       <div class="carousel-item">
-          <div class="row flex-nowrap">
-            <div class="col-6 col-lg-3">
-              <div class="card">
-                <img
-                  src="./assets/course-graphql.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
-                  <p class="card-text">
-                    GraphQL: introduction to graphQL for beginners
-                  </p>
-                  <div class="d-flex align-items-center text-muted small gap-2">
-                    <i class="bi bi-clock"></i>2h 40m
-                    <i class="bi bi-reception-4 text-primary"></i>Advance
-                  </div>
-                  <div class="d-flex align-items-center text-warning">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"> </i
-                    ><i class="bi bi-star-half"> </i><i class="bi bi-star"></i
-                    ><i class="bi bi-star"></i
-                    ><span class="text-muted smallS">(1,500)</span>
-                  </div>
-                  <p>$500 <del class="text-muted small">$600</del></p>
-                </div>
-                <div
-                  class="card-footer d-flex align-items-center justify-content-between px-4"
-                >
-                  <div class="d-flex align-items-center gap-2">
-                    <img
-                      class="rounded-circle"
-                      src="./assets/avatar-1.jpg"
-                      alt=""
-                    />
-                    <p class="text-muted small m-0">Brooklyn Simmons</p>
-                  </div>
-                  <i class="bi bi-bookmark text-muted"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-lg-3">
-              <div class="card">
-                <img
-                  src="./assets/course-graphql.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
-                  <p class="card-text">
-                    GraphQL: introduction to graphQL for beginners
-                  </p>
-                  <div class="d-flex align-items-center text-muted small gap-2">
-                    <i class="bi bi-clock"></i>2h 40m
-                    <i class="bi bi-reception-4 text-primary"></i>Advance
-                  </div>
-                  <div class="d-flex align-items-center text-warning">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"> </i
-                    ><i class="bi bi-star-half"> </i><i class="bi bi-star"></i
-                    ><i class="bi bi-star"></i
-                    ><span class="text-muted smallS">(1,500)</span>
-                  </div>
-                  <p>$500 <del class="text-muted small">$600</del></p>
-                </div>
-                <div
-                  class="card-footer d-flex align-items-center justify-content-between px-4"
-                >
-                  <div class="d-flex align-items-center gap-2">
-                    <img
-                      class="rounded-circle"
-                      src="./assets/avatar-1.jpg"
-                      alt=""
-                    />
-                    <p class="text-muted small m-0">Brooklyn Simmons</p>
-                  </div>
-                  <i class="bi bi-bookmark text-muted"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-lg-3">
-              <div class="card">
-                <img
-                  src="./assets/course-graphql.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
-                  <p class="card-text">
-                    GraphQL: introduction to graphQL for beginners
-                  </p>
-                  <div class="d-flex align-items-center text-muted small gap-2">
-                    <i class="bi bi-clock"></i>2h 40m
-                    <i class="bi bi-reception-4 text-primary"></i>Advance
-                  </div>
-                  <div class="d-flex align-items-center text-warning">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"> </i
-                    ><i class="bi bi-star-half"> </i><i class="bi bi-star"></i
-                    ><i class="bi bi-star"></i
-                    ><span class="text-muted smallS">(1,500)</span>
-                  </div>
-                  <p>$500 <del class="text-muted small">$600</del></p>
-                </div>
-                <div
-                  class="card-footer d-flex align-items-center justify-content-between px-4"
-                >
-                  <div class="d-flex align-items-center gap-2">
-                    <img
-                      class="rounded-circle"
-                      src="./assets/avatar-1.jpg"
-                      alt=""
-                    />
-                    <p class="text-muted small m-0">Brooklyn Simmons</p>
-                  </div>
-                  <i class="bi bi-bookmark text-muted"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-lg-3">
-              <div class="card">
-                <img
-                  src="./assets/course-graphql.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
-                  <p class="card-text">
-                    GraphQL: introduction to graphQL for beginners
-                  </p>
-                  <div class="d-flex align-items-center text-muted small gap-2">
-                    <i class="bi bi-clock"></i>2h 40m
-                    <i class="bi bi-reception-4 text-primary"></i>Advance
-                  </div>
-                  <div class="d-flex align-items-center text-warning">
-                    <i class="bi bi-star-fill"></i
-                    ><i class="bi bi-star-fill"> </i
-                    ><i class="bi bi-star-half"> </i><i class="bi bi-star"></i
-                    ><i class="bi bi-star"></i
-                    ><span class="text-muted smallS">(1,500)</span>
-                  </div>
-                  <p>$500 <del class="text-muted small">$600</del></p>
-                </div>
-                <div
-                  class="card-footer d-flex align-items-center justify-content-between px-4"
-                >
-                  <div class="d-flex align-items-center gap-2">
-                    <img
-                      class="rounded-circle"
-                      src="./assets/avatar-1.jpg"
-                      alt=""
-                    />
-                    <p class="text-muted small m-0">Brooklyn Simmons</p>
-                  </div>
-                  <i class="bi bi-bookmark text-muted"></i>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
+    <main class="container-fluid">
+      <!--PRIMO CAROUSEL-->
+      <section
+        class="container d-flex flex-column justify-content-center gap-2 pt-5"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+        <h3>Recommend to you</h3>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide position-relative"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-graphql.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        GraphQL: introduction to graphQL for beginners
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>2h 40m
+                        <i class="bi bi-reception-4 text-primary"></i>Advance
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-half"> </i
+                        ><i class="bi bi-star"></i><i class="bi bi-star"></i
+                        ><span class="text-muted smallS">(1,500)</span>
+                      </div>
+                      <p>$500 <del class="text-muted small">$600</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-5.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Brooklyn Simmons</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-javascript.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        A Complete Beginner's Guide to JavaScript
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>4h 10m
+                        <i class="bi bi-reception-4 text-primary"></i>Advance
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i>
+                        <i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-half"> </i
+                        ><i class="bi bi-star"></i
+                        ><span class="text-muted smallS">(7,500)</span>
+                      </div>
+                      <p>$700 <del class="text-muted small">$850</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-6.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Jenny Wilson</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
+                <div class="col-6 col-lg-3 d-none d-lg-block">
+                  <div class="card">
+                    <img
+                      src="./assets/course-node.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        Beginning Node.js, Express & MongoDB Development
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>2h 00m
+                        <i class="bi bi-reception-2 text-primary"></i
+                        >Intermediate
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star"></i>
+                        <span class="text-muted smallS">(15,700)</span>
+                      </div>
+                      <p>$800 <del class="text-muted small">$950</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-3.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Sina Ray</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 d-none d-lg-block">
+                  <div class="card">
+                    <img
+                      src="./assets/course-laravel.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        Laravel: The Ultimate Beginner's Guide to Learn
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>1h 00m
+                        <i class="bi bi-reception-1 text-primary"></i>Beginner
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i>
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-half"> </i>
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star"></i>
+                        <span class="text-muted smallS">(2,500)</span>
+                      </div>
+                      <p>$170 <del class="text-muted small">$220</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-7.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Sobo Rikhan</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="d-none d-lg-block col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-graphql.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        GraphQL: introduction to graphQL for beginners
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>2h 40m
+                        <i class="bi bi-reception-4 text-primary"></i>Advance
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-half"> </i
+                        ><i class="bi bi-star"></i><i class="bi bi-star"></i
+                        ><span class="text-muted smallS">(1,500)</span>
+                      </div>
+                      <p>$500 <del class="text-muted small">$600</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-5.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Brooklyn Simmons</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-none d-lg-block col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-javascript.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        A Complete Beginner's Guide to JavaScript
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>4h 10m
+                        <i class="bi bi-reception-4 text-primary"></i>Advance
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i>
+                        <i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-half"> </i
+                        ><i class="bi bi-star"></i
+                        ><span class="text-muted smallS">(7,500)</span>
+                      </div>
+                      <p>$700 <del class="text-muted small">$850</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-1.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Jenny Wilson</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-node.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        Beginning Node.js, Express & MongoDB Development
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>2h 00m
+                        <i class="bi bi-reception-2 text-primary"></i
+                        >Intermediate
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star"></i>
+                        <span class="text-muted smallS">(15,700)</span>
+                      </div>
+                      <p>$800 <del class="text-muted small">$950</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-3.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Sina Ray</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-laravel.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        Laravel: The Ultimate Beginner's Guide to Learn
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>1h 00m
+                        <i class="bi bi-reception-1 text-primary"></i>Beginner
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i>
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-half"> </i>
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star"></i>
+                        <span class="text-muted smallS">(2,500)</span>
+                      </div>
+                      <p>$170 <del class="text-muted small">$220</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-7.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Sobo Rikhan</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <i
+              class="arrow-left bi bi-caret-left position-absolute top-50 translate-middle-y"
+            ></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <i
+              class="arrow-right bi bi-caret-right position-absolute top-50 translate-middle-y"
+            ></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!--SECONDO CAROUSEL-->
+      <section
+        class="container d-flex flex-column justify-content-center gap-2 pt-5"
+      >
+        <h3>Recommend to you</h3>
+        <div
+          id="carouselExampleIndicators1"
+          class="carousel slide position-relative"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-graphql.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        GraphQL: introduction to graphQL for beginners
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>2h 40m
+                        <i class="bi bi-reception-4 text-primary"></i>Advance
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-half"> </i
+                        ><i class="bi bi-star"></i><i class="bi bi-star"></i
+                        ><span class="text-muted smallS">(1,500)</span>
+                      </div>
+                      <p>$500 <del class="text-muted small">$600</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-5.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Brooklyn Simmons</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-javascript.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        A Complete Beginner's Guide to JavaScript
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>4h 10m
+                        <i class="bi bi-reception-4 text-primary"></i>Advance
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i>
+                        <i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-half"> </i
+                        ><i class="bi bi-star"></i
+                        ><span class="text-muted smallS">(7,500)</span>
+                      </div>
+                      <p>$700 <del class="text-muted small">$850</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-1.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Jenny Wilson</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-none d-lg-block col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-node.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        Beginning Node.js, Express & MongoDB Development
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>2h 00m
+                        <i class="bi bi-reception-2 text-primary"></i
+                        >Intermediate
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star"></i>
+                        <span class="text-muted smallS">(15,700)</span>
+                      </div>
+                      <p>$800 <del class="text-muted small">$950</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-3.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Sina Ray</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-none d-lg-block col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-laravel.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        Laravel: The Ultimate Beginner's Guide to Learn
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>1h 00m
+                        <i class="bi bi-reception-1 text-primary"></i>Beginner
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i>
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-half"> </i>
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star"></i>
+                        <span class="text-muted smallS">(2,500)</span>
+                      </div>
+                      <p>$170 <del class="text-muted small">$220</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-7.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Sobo Rikhan</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="d-none d-lg-block col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-graphql.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        GraphQL: introduction to graphQL for beginners
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>2h 40m
+                        <i class="bi bi-reception-4 text-primary"></i>Advance
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-half"> </i
+                        ><i class="bi bi-star"></i><i class="bi bi-star"></i
+                        ><span class="text-muted smallS">(1,500)</span>
+                      </div>
+                      <p>$500 <del class="text-muted small">$600</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-5.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Brooklyn Simmons</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-none d-lg-block col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-javascript.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        A Complete Beginner's Guide to JavaScript
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>4h 10m
+                        <i class="bi bi-reception-4 text-primary"></i>Advance
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i>
+                        <i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-half"> </i
+                        ><i class="bi bi-star"></i
+                        ><span class="text-muted smallS">(7,500)</span>
+                      </div>
+                      <p>$700 <del class="text-muted small">$850</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-1.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Jenny Wilson</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-node.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        Beginning Node.js, Express & MongoDB Development
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>2h 00m
+                        <i class="bi bi-reception-2 text-primary"></i
+                        >Intermediate
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star"></i>
+                        <span class="text-muted smallS">(15,700)</span>
+                      </div>
+                      <p>$800 <del class="text-muted small">$950</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-3.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Sina Ray</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-laravel.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        Laravel: The Ultimate Beginner's Guide to Learn
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>1h 00m
+                        <i class="bi bi-reception-1 text-primary"></i>Beginner
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i>
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-half"> </i>
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star"></i>
+                        <span class="text-muted smallS">(2,500)</span>
+                      </div>
+                      <p>$170 <del class="text-muted small">$220</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-7.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Sobo Rikhan</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators1"
+            data-bs-slide="prev"
+          >
+            <i
+              class="arrow-left bi bi-caret-left position-absolute top-50 translate-middle-y"
+            ></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators1"
+            data-bs-slide="next"
+          >
+            <i
+              class="arrow-right bi bi-caret-right position-absolute top-50 translate-middle-y"
+            ></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!--TERZO CAROUSEL-->
+      <section
+        class="container d-flex flex-column justify-content-center gap-2 pt-5"
+      >
+        <h3>Recommend to you</h3>
+        <div
+          id="carouselExampleIndicators2"
+          class="carousel slide position-relative"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-graphql.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        GraphQL: introduction to graphQL for beginners
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>2h 40m
+                        <i class="bi bi-reception-4 text-primary"></i>Advance
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-half"> </i
+                        ><i class="bi bi-star"></i><i class="bi bi-star"></i
+                        ><span class="text-muted smallS">(1,500)</span>
+                      </div>
+                      <p>$500 <del class="text-muted small">$600</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-5.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Brooklyn Simmons</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-javascript.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        A Complete Beginner's Guide to JavaScript
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>4h 10m
+                        <i class="bi bi-reception-4 text-primary"></i>Advance
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i>
+                        <i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-half"> </i
+                        ><i class="bi bi-star"></i
+                        ><span class="text-muted smallS">(7,500)</span>
+                      </div>
+                      <p>$700 <del class="text-muted small">$850</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-1.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Jenny Wilson</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-none d-lg-block col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-node.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        Beginning Node.js, Express & MongoDB Development
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>2h 00m
+                        <i class="bi bi-reception-2 text-primary"></i
+                        >Intermediate
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star"></i>
+                        <span class="text-muted smallS">(15,700)</span>
+                      </div>
+                      <p>$800 <del class="text-muted small">$950</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-3.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Sina Ray</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-none d-lg-block col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-laravel.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        Laravel: The Ultimate Beginner's Guide to Learn
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>1h 00m
+                        <i class="bi bi-reception-1 text-primary"></i>Beginner
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i>
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-half"> </i>
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star"></i>
+                        <span class="text-muted smallS">(2,500)</span>
+                      </div>
+                      <p>$170 <del class="text-muted small">$220</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-7.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Sobo Rikhan</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="d-none d-lg-block col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-graphql.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        GraphQL: introduction to graphQL for beginners
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>2h 40m
+                        <i class="bi bi-reception-4 text-primary"></i>Advance
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-half"> </i
+                        ><i class="bi bi-star"></i><i class="bi bi-star"></i
+                        ><span class="text-muted smallS">(1,500)</span>
+                      </div>
+                      <p>$500 <del class="text-muted small">$600</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-5.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Brooklyn Simmons</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-none d-lg-block col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-javascript.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        A Complete Beginner's Guide to JavaScript
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>4h 10m
+                        <i class="bi bi-reception-4 text-primary"></i>Advance
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i>
+                        <i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-half"> </i
+                        ><i class="bi bi-star"></i
+                        ><span class="text-muted smallS">(7,500)</span>
+                      </div>
+                      <p>$700 <del class="text-muted small">$850</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-1.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Jenny Wilson</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-node.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        Beginning Node.js, Express & MongoDB Development
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>2h 00m
+                        <i class="bi bi-reception-2 text-primary"></i
+                        >Intermediate
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star-fill"> </i
+                        ><i class="bi bi-star"></i>
+                        <span class="text-muted smallS">(15,700)</span>
+                      </div>
+                      <p>$800 <del class="text-muted small">$950</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-3.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Sina Ray</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="card">
+                    <img
+                      src="./assets/course-laravel.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body d-flex flex-column gap-2 px-4 pb-1">
+                      <p class="card-text">
+                        Laravel: The Ultimate Beginner's Guide to Learn
+                      </p>
+                      <div
+                        class="d-flex align-items-center text-muted small gap-2"
+                      >
+                        <i class="bi bi-clock"></i>1h 00m
+                        <i class="bi bi-reception-1 text-primary"></i>Beginner
+                      </div>
+                      <div class="d-flex align-items-center text-warning">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"> </i>
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-half"> </i>
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star"></i>
+                        <span class="text-muted smallS">(2,500)</span>
+                      </div>
+                      <p>$170 <del class="text-muted small">$220</del></p>
+                    </div>
+                    <div
+                      class="card-footer d-flex align-items-center justify-content-between px-4"
+                    >
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          class="rounded-circle"
+                          src="./assets/avatar-7.jpg"
+                          alt=""
+                        />
+                        <p class="text-muted small m-0">Sobo Rikhan</p>
+                      </div>
+                      <div class="container-icon-save position-relative">
+                        <i class="bi bi-bookmark text-muted"></i>
+                        <i
+                          class="bi bi-bookmark-fill position-absolute top-50 start-50 translate-middle"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators2"
+            data-bs-slide="prev"
+          >
+            <i
+              class="arrow-left bi bi-caret-left position-absolute top-50 translate-middle-y"
+            ></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators2"
+            data-bs-slide="next"
+          >
+            <i
+              class="arrow-right bi bi-caret-right position-absolute top-50 translate-middle-y"
+            ></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="container">
+      <div
+        class="row justify-content-between align-items-center p-2 border-top"
+      >
+        <div class="col-lg-6">
+          <p class="small text-muted m-0">2022 Geeks. All Rights Reserved.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="d-flex gap-4 justify-content-end">
+            <div><p class="small text-muted m-0">Privacy</p></div>
+            <div><p class="small text-muted m-0">Terms</p></div>
+            <div><p class="small text-muted m-0">Feedback</p></div>
+            <div><p class="small text-muted m-0">Support</p></div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

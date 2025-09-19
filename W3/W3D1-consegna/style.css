@@ -4,6 +4,37 @@
 .nav-right img{
     width: 40px;
 }
+.user-online::after{
+     content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+    background-color: rgb(38, 206, 38);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.btn-bell{
+    background-color: #f3f2f6;
+    
+}
+.btn-bell::after{
+     content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: #7153fa;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+
 .hero{
     background-color: #7052f8;
 }
@@ -22,10 +53,61 @@ width: 50px;
     width: 40px;
 }
 
-.section-card{
+.card{
+  max-width: 18rem;
+  height: 450px;
+  
+}
+
+main{
     background-color: #f5f4f8;
 }
 
-.card{
-    width: 18rem;
+.arrow-left, .arrow-right{
+   background-color: #ffffff;
+   color: #7052f8;
+   border-radius: 50%;
+   padding: 7px 10px;
+}
+
+.arrow-left{
+    left: -10px; 
+}
+
+.arrow-right{
+    right: -10px;
+}
+
+@media only screen and (min-width: 769px){
+.arrow-left, .arrow-right{
+   background-color: #ffffff;
+   color: #7052f8;
+   border-radius: 50%;
+   padding: 7px 10px;
+}
+
+.arrow-left{
+    left: -90px; 
+}
+
+.arrow-right{
+    right: -50px;
+}
+}
+
+
+main section:nth-of-type(3){
+    padding-bottom:100px;
+   
+}
+
+.bi-bookmark-fill{
+    opacity: 0;
+}
+.bi-bookmark-fill:hover{
+    opacity: 1;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 0;
 }
