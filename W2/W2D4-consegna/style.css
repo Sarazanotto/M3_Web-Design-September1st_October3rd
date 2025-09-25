@@ -1,41 +1,90 @@
-body{
-     font-family: "Geologica", sans-serif;
-
-
-}
-nav{
-    background: linear-gradient(to top, rgb(157, 186, 254), rgb(8, 41, 255));
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-nav img{
-    max-width: 100px;
+nav {
+  background: linear-gradient(to top, rgb(157, 186, 254), rgb(8, 41, 255));
 }
 
-.nav-link{
-    text-decoration: none;
-    color: aliceblue;
+nav img {
+  max-width: 100px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: aliceblue;
 }
 .nav-link:hover {
-color: #00b7ff;
-font-weight: bold;
+  color: #00b7ff;
+  font-weight: bold;
 }
 
-.jumbotron img{
-   display: block;
+.jumbotron img {
+  display: block;
   max-height: 850px;
 }
-.jumbotron h1,p{
-    color:#000 ;
+.jumbotron h1,
+p {
+  color: #000;
 }
 
-.card{
-    max-width: 300px;
-    max-height: 350px;
-    background-color: #ffffff;
-    border: none;
+h2{
+  font-weight: bold;
 }
-.card img{
-    max-height: 250px;
-    width: auto;
-    border-radius: 10px;
+
+.card {
+  max-width: 300px;
+
+  background-color: #ffffff;
+  border: 2px solid #ebebeb inset;
+  border-radius: 11px;
+}
+.week-offers .card {
+  height: 350px;
+}
+
+.welcome-summer .card{
+  height: 300px;
+}
+
+.welcome-summer .card {
+  height: 260px;
+  box-shadow: 3px 3px 6px  #dad8d8;
+}
+.card img {
+  max-height: 250px;
+  width: auto;
+  border-radius:10px 10px 0 0;
+}
+
+
+
+.card-last-minute {
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.image-last-minute:hover .content-last-minute {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+.content-last-minute {
+  content: "";
+  top: 50px;
+  left: 30px;
+  transform: Scale(0);
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+@keyframes scale-last-minute {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1.1);
+    opacity: 1;
+  }
 }

@@ -23,9 +23,9 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg px-5">
+    <nav class="navbar navbar-expand-lg px-5 sticky-top">
       <div class="container-fluid">
-        <div class="navbar-brand" href="#">
+        <div class="navbar-brand" href="#home">
           <img src="./assets/logo.png" alt="Logo" height="40" />
         </div>
 
@@ -55,9 +55,6 @@
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#offertesettimana"
                   >Le offerte della settimana</a
@@ -104,83 +101,235 @@
         </div>
       </div>
     </section>
-
-    <section class="week-offers container">
+    <main class="d-flex flex-column gap-5">
+      <section class="week-offers container pt-5">
         <h2>Offerte della settimana</h2>
-      <div class="row">
-        <div class="col-md-4 col-lg-3">
-          <div class="card">
-            <img
-              src="./assets/img.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
+        <div class="row">
+          <div class="col-md-4 col-lg-3">
+            <div class="card">
+              <img src="./assets/img.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-            <div class="col-md-4 col-lg-3">
-          <div class="card">
-            <img
-              src="./assets/img2.webp"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
+          <div class="col-md-4 col-lg-3">
+            <div class="card">
+              <img src="./assets/img2.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-            <div class="col-md-4 col-lg-3">
-          <div class="card">
-            <img
-              src="./assets/img3.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
-            </div>
-          </div>
-        </div>
-
-           <div class="col-md-4 col-lg-3">
-          <div class="card">
-            <img
-              src="https://picsum.photos/100"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
+          <div class="col-md-4 col-lg-3">
+            <div class="card">
+              <img src="./assets/img3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+              </div>
             </div>
           </div>
 
-
+          <div class="col-md-4 col-lg-3">
+            <div class="card">
+              <img src="./assets/img3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
+      <section class="welcome-summer container">
+        <h2>Welcome Summer</h2>
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card">
+              <img src="./assets/img2.webp" alt="" />
+              <div class="d-flex flex-column gap-1 justify-content-center px-2">
+                <h4>Location</h4>
+                <p>descrizione location</p>
+                <div
+                  class="w-100 d-flex align-items-center justify-content-between"
+                >
+                  <p class="">durata</p>
+                  <p class="text-danger">prezzo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card">
+              <img src="./assets/img2.webp" alt="" />
+              <div class="d-flex flex-column gap-1 justify-content-center p-2">
+                <h4>Location</h4>
+                <p>descrizione location</p>
+                <div
+                  class="w-100 d-flex align-items-center justify-content-between"
+                >
+                  <p>durata</p>
+                  <p class="text-danger">prezzo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card">
+              <img src="./assets/img2.webp" alt="" />
+              <div class="d-flex flex-column gap-1 justify-content-center p-2">
+                <h4>Location</h4>
+                <p>descrizione location</p>
+                <div
+                  class="w-100 d-flex align-items-center justify-content-between"
+                >
+                  <p>durata</p>
+                  <p class="text-danger">prezzo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card">
+              <img src="./assets/img2.webp" alt="" />
+              <div class="d-flex flex-column gap-1 justify-content-center p-2">
+                <h4>Location</h4>
+                <p>descrizione location</p>
+                <div
+                  class="w-100 d-flex align-items-center justify-content-between"
+                >
+                  <p>durata</p>
+                  <p class="text-danger">prezzo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card">
+              <img src="./assets/img2.webp" alt="" />
+              <div class="d-flex flex-column gap-1 justify-content-center p-2">
+                <h4>Location</h4>
+                <p>descrizione location</p>
+                <div
+                  class="w-100 d-flex align-items-center justify-content-between"
+                >
+                  <p>durata</p>
+                  <p class="text-danger">prezzo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="card">
+              <img src="./assets/img2.webp" alt="" />
+              <div class="d-flex flex-column gap-1 justify-content-center p-2">
+                <h4>Location</h4>
+                <p>descrizione location</p>
+                <div
+                  class="w-100 d-flex align-items-center justify-content-between"
+                >
+                  <p>durata</p>
+                  <p class="text-danger">prezzo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-       
-    </section>
+      <section class="day-offert container">
+        <h2>Offerta del giorno</h2>
+        <div class="row">
+          <div class="d-none d-md-block">
+            <div class="row">
+              <div class="col-8">
+                <img class="w-100 rounded-5" src="./assets/img2.webp" alt="" />
+              </div>
+              <div class="col-4 d-flex flex-column justify-content-center">
+                <p>nome</p>
+                <p>data</p>
+                <p>prezzo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="last-minute container">
+        <h2>Last Minute</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-lg-3">
+            <div class="card-last-minute">
+              <div class="image-last-minute position-relative">
+                <img class="w-100 rounded" src="./assets/img3.jpg" alt="" />
+                <div class="content-last-minute position-absolute">
+                  <h6>luogo</h6>
+                  <p>periodo</p>
+                  <p>prezzo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="card-last-minute">
+              <div class="image-last-minute position-relative">
+                <img class="w-100 rounded" src="./assets/img3.jpg" alt="" />
+                <div class="content-last-minute position-absolute">
+                  <h6>luogo</h6>
+                  <p class="m-0">periodo</p>
+                  <p class="m-0">prezzo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="card-last-minute">
+              <div class="image-last-minute position-relative">
+                <img class="w-100 rounded" src="./assets/img3.jpg" alt="" />
+                <div class="content-last-minute position-absolute">
+                  <h6>luogo</h6>
+                  <p>periodo</p>
+                  <p>prezzo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="card-last-minute">
+              <div class="image-last-minute position-relative">
+                <img class="w-100 rounded" src="./assets/img3.jpg" alt="" />
+                <div class="content-last-minute position-absolute">
+                  <h6>luogo</h6>
+                  <p>periodo</p>
+                  <p>prezzo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback container">
+        <h2>Cosa dicono di noi...</h2>
+      </section>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="./main.js"></script>
   </body>
 </html>
