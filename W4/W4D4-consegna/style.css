@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  font-family: "Montserrat", sans-serif;
+
+}
+@media (max-width:576px) {
+  body{
+    font-size: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+ body{
+  font-size: 10px;
+ }
+}
+
+
+/*NAV*/
+nav {
+  background: linear-gradient(to top, #00000000, #000000af);
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+#navbar.scrolled{
+  background-color: #111;
+  transition: all 1s;
+}
+.container-logo {
+  max-width: 95px;
+  min-width: 45px;
+}
+
+.container-logo img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.menu-toggle {
+  display: none;
+}
+.menu-toggle.show {
+  background-color: #000000b5;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem 0;
+  position: absolute;
+  right: -100px;
+}
+.menu-toggle.show .dropdown-item {
+  padding: 0.5rem 3rem;
+}
+.menu-toggle.show .dropdown-item:hover {
+  text-decoration: none;
+  background-color: #ffffff38;
+}
+
+nav ul li a,
+.nav-right a {
+  text-decoration: none;
+  color: #fff;
+}
+nav ul li:first-child a {
+  font-weight: bold;
+}
+
+nav ul li a:hover,
+.nav-right a:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.589);
+}
+
+.nav-right button , .drop-left button{
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+}
+button i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.drop-right:hover > button,
+.drop-right:hover > .dropdown-menu,
+.drop-right > button:hover + .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.drop-left {
+  right: 0;
+  transform: translateX(0);
+}
+
+.dropdown-menu {
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.671);
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+.dropdown-menu li {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.dropdown-menu li i {
+  color: #ffffff8c;
+  font-size: 1rem;
+}
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  text-decoration: underline;
+  background-color: transparent;
+  color: white;
+}
+
+/*HERO*/
+.hero {
+padding: 0;
+  max-height: 850px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.hero::after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, #00000000, #111111);
+}
+
+.hero img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 850px;
+  
+}
+
+.container-title-hero-button{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+  transform: scale(1);
+  transform-origin: top left;
+  max-width: 100%;
+}
+
+
+@media (max-width: 576px) {
+  .container-title-hero-button {
+    transform: scale(0.5);
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container-title-hero-button {
+    transform: scale(0.8);
+  }
+}
+
+ .container-title-hero-button button:last-child{
+  background-color:#00000057;
+  color: #fff;
+ }
+.container-title-hero-button button:last-child:hover{
+  background-color:#2121218d ;
+}
+.container-title-hero-button button:first-child{
+  background-color: #ffffff;
+}
+.container-title-hero-button button:first-child:hover{
+  background-color: #ffffff99;
+}
+
+/*TITLECAROUSEL*/
+@media (max-width:576px){
+.title-carousel{
+  font-size: 15px;
+}
+} 
+@media (min-width:577px)and (max-width:768px){
+.title-carousel{
+  font-size: 20px;
+}
+} 
+@media (min-width:768px){
+.title-carousel{
+  font-size: 25px;
+  
+}
+} 
+
+.banana {
+  position: relative;
+  width: 100px;
+}
+
+.see-more {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  transform: translateX(-100px);
+  transition: transform 1s ease-in-out, visibility 0.2s ease-in-out 0.5s,
+    opacity 0.5s ease-in-out;
+  color: rgb(0, 229, 255);
+}
+
+.title-carousel {
+  background-color: #111111;
+}
+.container-title-carousel i {
+  transition: transform 1s ease-in-out;
+  color: rgb(0, 229, 255);
+  opacity: 0;
+}
+.container-title-carousel:hover .see-more {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(20px);
+}
+.container-title-carousel:hover i {
+  transform: translateX(110px);
+  opacity: 1;
+}
+
+
+/*SWIPER*/
+.swiper {
+  width: 100%;
+  overflow: visible !important;
+}
+.swiper-wrapper{
+  overflow: visible !important ;
+}
+
+
+.swiper::after,
+.swiper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 50px;
+  height: 100%;
+  background-color: #00000067;
+  z-index: 10;
+}
+.swiper::before {
+  right: 0;
+}
+.swiper::after {
+  left: 0;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible !important;
+  
+}
+
+.containerCard {
+  width: 18rem;
+  position: relative;
+  transition: transform .3s ease;
+  z-index: 0;
+  transform-origin:center ;
+}
+.containerCard:hover{
+  transform: scale(1.2);
+  z-index: 9999;
+}
+
+.card-animation{
+  width: 19rem;
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  right: 0;
+  background-color: #111111;
+  color: #fff;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.containerCard:hover .card-animation{
+  opacity: 1;
+}
+
+.containerCard img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+.container-logo-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+  height: 40px;
+  width: 40px;
+}
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.button-dx,
+.button-sx {
+  color: aliceblue;
+  position: absolute;
+  z-index: 100;
+ visibility: hidden;
+}
+
+.container-title-swiper:hover .button-dx, .container-title-swiper:hover .button-sx{
+  visibility: visible;
+}
+ .container-title-swiper{
+  padding-left: 2rem;
+  overflow: visible;
+ }
+
+ion-icon{
+ font-size: 30px;
+}
+
+footer ul{
+  list-style: none;
+ padding: 0;
+ padding-bottom: 1rem;
+}
+footer li a{
+text-decoration: none;
+  color: rgba(255, 255, 255, 0.271);
+  font-weight: 100;
+  font-size: 10px;
+}
+footer li a:hover{
+  text-decoration:underline;
+}
+
+footer p{
+ font-size: 2px;
+ font-weight: 100;
+}

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav id="navbar" class="container-fluid px-md-5 py-4">
+      <div class="row">
+        <div class="col-8 d-flex gap-5">
+          <div class="container-logo">
+            <img src="./assets/logo.png" alt="logo" />
+          </div>
+
+          <div class="drop-left">
+            <button class="button-toggle d-lg-none text-white">Sfoglia</button>
+
+            <ul class="menu-toggle list-unstyled text-white">
+              <li class="dropdown-item"><a class="" href="#">Home</a></li>
+              <li class="dropdown-item"><a class="" href="#">Serie</a></li>
+              <li class="dropdown-item"><a class="" href="#">Film</a></li>
+              <li class="dropdown-item"><a class="" href="#">Giochi</a></li>
+              <li class="dropdown-item">
+                <a class="" href="#">Nuovi e popolari</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="" href="#">La mia lista</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="" href="#">Sfoglia per lingua</a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="d-none d-lg-flex gap-3 list-unstyled text-white">
+            <li class=""><a class="" href="#">Home</a></li>
+            <li class=""><a class="" href="#">Serie</a></li>
+            <li class=""><a class="" href="#">Film</a></li>
+            <li class=""><a class="" href="#">Giochi</a></li>
+            <li class=""><a class="" href="#">Nuovi e popolari</a></li>
+            <li class=""><a class="" href="#">La mia lista</a></li>
+            <li class=""><a class="" href="#">Sfoglia per lingua</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-right col-4 d-flex justify-content-end gap-3">
+          <button class="searchTab">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <a class="d-none d-lg-block" href="#">Bambini</a>
+          <button>
+            <i class="fa-solid fa-bell text-white"></i>
+          </button>
+          <div class="dropdown drop-right">
+            <button
+              class="btn btn-secondary dropdown-toggle position-relative"
+              type="button"
+              aria-expanded="false"
+            >
+              <img
+                class="rounded w-100 position-absolute top-50 start-50 translate-middle"
+                src="./assets/icon-user.png"
+                alt=""
+              />
+            </button>
+            <ul class="dropdown-menu drop-left">
+              <li>
+                <a class="dropdown-item d-flex gap-2 fw-normal" href="#"
+                  ><img
+                    class="rounded w-25"
+                    src="./assets/icon-user.png"
+                    alt=""
+                  />Giacomo</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item d-flex gap-2" href="#"
+                  ><img
+                    class="rounded w-25"
+                    src="./assets/icon-user.png"
+                    alt=""
+                  />Bambini</a
+                >
+              </li>
+              <li class="dropdown-divider"></li>
+              <li>
+                <i class="fa-solid fa-pencil"></i
+                ><a class="dropdown-item" href="#">Gestisci profilo</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-people-arrows"></i
+                ><a class="dropdown-item" href="#">Trasferisci profilo</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-user"></i
+                ><a class="dropdown-item" href="#">Account</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-question"></i
+                ><a class="dropdown-item" href="#">Centro assistenza</a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item text-center" href="#"
+                  >Esci da netflix</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero container-fluid position-relative">
+      <img class="img-fluid" src="./assets/jumbotron-img.webp" alt="" />
+
+      <div class="container-title-hero-button d-flex flex-column">
+        <img
+          class="img-fluid w-25 w-50"
+          src="./assets/titolo-jumbo.png"
+          alt=""
+        />
+
+        <div class="d-flex align-items-center gap-3">
+          <button
+            type="button"
+            class="btn text-center d-flex align-items-center gap-2 px-3 py-2"
+          >
+            <i class="fa-solid fa-play text-dark fs-6 fs-md-4 fs-lg-3"></i
+            >Riproduci ora
+          </button>
+
+          <button
+            type="button"
+            class="btn text-center d-flex align-items-center gap-2 fw-bold px-3 py-2"
+          >
+            <i class="fa-solid fa-circle-info fs-6 fs-md-4 fs-lg-3"></i> Altre
+            info
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main class="container-fluid">
+      <!--PREMIATE-->
+      <div class="container-title-swiper py-2">
+        <div class="container-title-carousel d-flex align-items-center gap-2">
+          <p class="title-carousel m-0 text-light">Serie tv premiate</p>
+
+          <div class="banana d-flex align-items-center">
+            <a
+              class="see-more text-decoration-none fw-bold m-0 small"
+              href="./indexSeeMore.html"
+              >Sfoglia tutti</a
+            >
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="swiper mySwiper position-relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="containerCard position-relative">
+                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                <div class="container-logo-card position-absolute">
+                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
+                </div>
+
+                <div class="card-animation d-flex flex-column align-items-start justify-content-center gap-3 p-2">
+                  <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                  <div class="d-flex gap-5 fs-3 py-2">
+                  <i class="fa-solid fa-circle-play"></i>
+                  <i class="fa-solid fa-plus"></i>
+                  <i class="fa-solid fa-thumbs-up"></i>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <i class="fa-solid fa-rectangle-xmark fs-5"></i>
+                    <p>Tipologia film</p>
+                    <i class="fa-solid fa-rectangle-xmark fs-5"></i>
+                  </div>
+                  <div>
+                    <ul class="d-flex gap-3 list-unstyled">
+                      <li class="small fs-6 ">violento</li>
+                      <li class="small">&bull; thriller</li>
+                      <li class="small">&bull; suspance</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="containerCard position-relative">
+                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                <div class="container-logo-card position-absolute">
+                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="containerCard position-relative">
+                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                <div class="container-logo-card position-absolute">
+                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="containerCard position-relative">
+                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                <div class="container-logo-card position-absolute">
+                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="containerCard position-relative">
+                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                <div class="container-logo-card position-absolute">
+                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="containerCard position-relative">
+                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                <div class="container-logo-card position-absolute">
+                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="containerCard position-relative">
+                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                <div class="container-logo-card position-absolute">
+                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="containerCard position-relative">
+                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                <div class="container-logo-card position-absolute">
+                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="containerCard position-relative">
+                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                <div class="container-logo-card position-absolute">
+                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="button-sx swiper-button-next"></div>
+          <div class="button-dx swiper-button-prev"></div>
+        </div>
+      </div>
+
+      <!--SCELTI PER TE-->
+      <div class="container-title-swiper py-2 py-md-5">
+        <div class="container-title-carousel d-flex align-items-center gap-3">
+          <p class="title-carousel m-0 text-light">Scelti per te oggi</p>
+
+          <div class="banana d-flex align-items-center">
+            <a
+              class="see-more text-decoration-none fw-bold m-0 small"
+              href="./indexSeeMore.html"
+              >Sfoglia tutti</a
+            >
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="swiper mySwiper position-relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="containerCard position-relative">
+                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                <div class="container-logo-card position-absolute">
+                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="containerCard position-relative">
+                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                <div class="container-logo-card position-absolute">
+                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="containerCard position-relative">
+                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                <div class="container-logo-card position-absolute">
+                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="containerCard position-relative">
+                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                <div class="container-logo-card position-absolute">
+                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="containerCard position-relative">
+                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                <div class="container-logo-card position-absolute">
+                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="containerCard position-relative">
+                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                <div class="container-logo-card position-absolute">
+                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="containerCard position-relative">
+                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                <div class="container-logo-card position-absolute">
+                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="containerCard position-relative">
+                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                <div class="container-logo-card position-absolute">
+                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="containerCard position-relative">
+                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
+                <div class="container-logo-card position-absolute">
+                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="button-sx swiper-button-next"></div>
+          <div class="button-dx swiper-button-prev"></div>
+        </div>
+      </div>
+    </main>
+
+<footer class="container">
+  <div class="icons-footer">
+    <ion-icon name="logo-facebook"></ion-icon>
+    <ion-icon name="logo-instagram"></ion-icon>
+    <ion-icon name="logo-twitter"></ion-icon>
+    <ion-icon name="logo-youtube"></ion-icon>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-3">
+      <ul>
+        <li><a href="">Audiodescrizione</a></li>
+        <li><a href="">Rapporti</a></li>
+        <li><a href="">Note legali</a></li>
+        <li><a href="">Preferenze pubblicità</a></li>
+  
+      </ul>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3">
+      <ul>
+        <li><a href="">Centro assistenza</a></li>
+        <li><a href="">Opportunità di lavoro</a></li>
+        <li><a href="">Preferenze per i cookie</a></li>
+      </ul>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3">
+       <ul>
+        <li><a href="">Carte regalo</a></li>
+        <li><a href="">Condizioni di utilizzo</a></li>
+        <li><a href="">Informazioni sull'azienda</a></li>
+      </ul>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3 ">
+       <ul>
+        <li><a href="">Media center</a></li>
+        <li><a href="">Privacy</a></li>
+        <li><a href="">Contattaci</a></li>
+      </ul>
+    </div>
+  </div>
+ 
+</footer>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c31b4495af.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
