@@ -1,17 +1,17 @@
 
   const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 6, // default
-    spaceBetween: 16, // spazio tra le card
+    slidesPerView: 6,
+    spaceBetween: 16, 
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-      // Quando la larghezza è <= 768px (tablet e mobile)
+      
       0: {
         slidesPerView: 3,
       },
-      // >= 1024px (desktop)
+     
       1024: {
         slidesPerView: 6,
       },
@@ -46,3 +46,6 @@ window.addEventListener("scroll", ()=>{
     navbar.classList.remove("scrolled")
   }
 })
+
+
+

@@ -292,7 +292,7 @@ padding: 0;
   position: relative;
   transition: transform .3s ease;
   z-index: 0;
-  transform-origin:center ;
+  
 }
 .containerCard:hover{
   transform: scale(1.2);
@@ -300,7 +300,8 @@ padding: 0;
 }
 
 .card-animation{
-  width: 19rem;
+  border-radius: 10px;
+  width: 18rem;
   position: absolute;
   bottom: -50%;
   left: 0;
@@ -308,10 +309,13 @@ padding: 0;
   background-color: #111111;
   color: #fff;
   opacity: 0;
+  visibility: hidden;
   transition: opacity .3s ease;
 }
 .containerCard:hover .card-animation{
   opacity: 1;
+  visibility: visible;
+  z-index: 100;
 }
 
 .containerCard img {

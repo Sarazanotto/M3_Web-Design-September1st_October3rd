@@ -14,20 +14,26 @@ btnSearch.addEventListener("click", ()=>{
 
 })*/
 
-const scrollContainer= document.querySelectorAll(".scrollContainer")
-const btnScrollRight= document.querySelectorAll(".arrow-right")
-const btnScrollLeft= document.querySelectorAll(".arrow-left")
+const scrollContainer = document.querySelectorAll(".scrollContainer");
+const btnScrollRight = document.querySelectorAll(".arrow-right");
+const btnScrollLeft = document.querySelectorAll(".arrow-left");
 
+btnScrollLeft.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    scrollContainer[i].scrollBy({ left: -400, behavior: "smooth" });
+  });
+});
 
-btnScrollLeft.forEach((btn, i)=>{
-    btn.addEventListener("click", ()=>{
-        scrollContainer[i].scrollBy({left:-400, behavior: "smooth"})
-    })
-})
+btnScrollRight.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    scrollContainer[i].scrollBy({ left: 400, behavior: "smooth" });
+  });
+});
 
-btnScrollRight.forEach((btn, i)=>{
-    btn.addEventListener("click", ()=>{
-        scrollContainer[i].scrollBy({left:400, behavior: "smooth"})
-    })
-})
+/*const swiper = document.querySelector(".mySwiper");
+
+const shadow = swiper.shadowRoot;
+
+const arrowLeft = document.querySelector("swiper-button-prev");
+arrowLeft.src = "./arrow-left.svg";*/
 
