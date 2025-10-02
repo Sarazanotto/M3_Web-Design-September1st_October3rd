@@ -7,19 +7,18 @@
 body {
   background-color: #111;
   font-family: "Montserrat", sans-serif;
-
+  overflow-x: hidden;
 }
-@media (max-width:576px) {
-  body{
+@media (max-width: 576px) {
+  body {
     font-size: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
- body{
-  font-size: 10px;
- }
+  body {
+    font-size: 10px;
+  }
 }
-
 
 /*NAV*/
 nav {
@@ -31,9 +30,10 @@ nav {
   width: 100%;
   z-index: 100;
 }
-#navbar.scrolled{
-  background-color: #111;
-  transition: all 1s;
+
+#navbar.scrolled {
+  background-color: #111111;
+  transition: all .5s;
 }
 .container-logo {
   max-width: 95px;
@@ -47,6 +47,7 @@ nav {
 
 .menu-toggle {
   display: none;
+  visibility: hidden;
 }
 .menu-toggle.show {
   background-color: #000000b5;
@@ -58,6 +59,7 @@ nav {
   padding: 1rem 0;
   position: absolute;
   right: -100px;
+  visibility: visible;
 }
 .menu-toggle.show .dropdown-item {
   padding: 0.5rem 3rem;
@@ -82,7 +84,8 @@ nav ul li a:hover,
   color: rgba(255, 255, 255, 0.589);
 }
 
-.nav-right button , .drop-left button{
+.nav-right button,
+.drop-left button {
   width: 30px;
   height: 30px;
   border: none;
@@ -113,7 +116,7 @@ button i {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  opacity: 0;
+  visibility: hidden;
 }
 .dropdown-menu li {
   display: flex;
@@ -136,12 +139,11 @@ button i {
 
 /*HERO*/
 .hero {
-padding: 0;
+  padding: 0;
   max-height: 850px;
   position: relative;
   z-index: 1;
 }
-
 
 .hero::after {
   position: absolute;
@@ -157,10 +159,9 @@ padding: 0;
   width: 100%;
   object-fit: cover;
   max-height: 850px;
-  
 }
 
-.container-title-hero-button{
+.container-title-hero-button {
   position: absolute;
   content: "";
   top: 50%;
@@ -174,7 +175,6 @@ padding: 0;
   max-width: 100%;
 }
 
-
 @media (max-width: 576px) {
   .container-title-hero-button {
     transform: scale(0.5);
@@ -186,19 +186,21 @@ padding: 0;
   }
 }
 
- .container-title-hero-button button:last-child{
-  background-color:#00000057;
+.container-title-hero-button button:last-child {
+  background-color: #00000057;
   color: #fff;
- }
-.container-title-hero-button button:last-child:hover{
-  background-color:#2121218d ;
 }
-.container-title-hero-button button:first-child{
+.container-title-hero-button button:last-child:hover {
+  background-color: #2121218d;
+}
+.container-title-hero-button button:first-child {
   background-color: #ffffff;
 }
-.container-title-hero-button button:first-child:hover{
+.container-title-hero-button button:first-child:hover {
   background-color: #ffffff99;
 }
+
+
 
 /*TITLECAROUSEL*/
 @media (max-width:576px){
@@ -214,11 +216,10 @@ padding: 0;
 @media (min-width:768px){
 .title-carousel{
   font-size: 25px;
-  
 }
 } 
 
-.banana {
+.title-anchor {
   position: relative;
   width: 100px;
 }
@@ -252,129 +253,108 @@ padding: 0;
   opacity: 1;
 }
 
-
 /*SWIPER*/
-.swiper {
-  width: 100%;
-  overflow: visible !important;
+.swiper{
+  margin-bottom: 40px;
 }
-.swiper-wrapper{
-  overflow: visible !important ;
-}
-
-
-.swiper::after,
-.swiper::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  width: 50px;
-  height: 100%;
-  background-color: #00000067;
-  z-index: 10;
-}
-.swiper::before {
-  right: 0;
-}
-.swiper::after {
-  left: 0;
+.swiper:last-child{
+  margin-bottom: 120px;
 }
 .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: visible !important;
-  
-}
-
-.containerCard {
-  width: 18rem;
   position: relative;
-  transition: transform .3s ease;
-  z-index: 0;
-  
-}
-.containerCard:hover{
-  transform: scale(1.2);
-  z-index: 9999;
-}
-
-.card-animation{
-  border-radius: 10px;
+  display: flex;
+  padding: 0 4px;
+  gap: 10px;
+  border-radius: 5px;
   width: 18rem;
-  position: absolute;
-  bottom: -50%;
-  left: 0;
-  right: 0;
-  background-color: #111111;
-  color: #fff;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .3s ease;
-}
-.containerCard:hover .card-animation{
-  opacity: 1;
-  visibility: visible;
-  z-index: 100;
 }
 
-.containerCard img {
-  height: 100%;
+.swiper::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 900px;
+  background-color: #1111112d;
+  z-index: 1;
+}
+
+.swiper-slide img {
   width: 100%;
   object-fit: cover;
-  display: block;
-  border-radius: 10px;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 5px;
 }
-.container-logo-card {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding-top: 10px;
-  height: 40px;
-  width: 40px;
+.swiper:hover .arrow-left, .swiper:hover .arrow-right{
+    visibility: visible;
 }
-.logo-img {
+.arrow-right,
+.arrow-left {
+  color: #fff;
+  width: 20px;
+  visibility: hidden;
+  
+}
+.arrow-right:hover,
+.arrow-left:hover {
+  color: #fff;
+  width: 25px;
+}
+
+.container-svg-img svg{
   width: 100%;
-  height: 100%;
+}
+/*.container-svg-img{
+  position: relative;
+  width: 100%;
+  
+}
+.container-img{
+  position: absolute;
+  content: "";
+width: 8rem;
+right:15px;
+top: 50%;
+transform: translateY(-50%);
+
+}
+
+.container-img img{
+  width: 100%;
+  height: auto;
+display: block;
   object-fit: contain;
 }
-
-.button-dx,
-.button-sx {
-  color: aliceblue;
-  position: absolute;
-  z-index: 100;
- visibility: hidden;
+.container-svg-img svg{
+  width: 100%;
+  height: 100%;
 }
 
-.container-title-swiper:hover .button-dx, .container-title-swiper:hover .button-sx{
-  visibility: visible;
-}
- .container-title-swiper{
-  padding-left: 2rem;
-  overflow: visible;
- }
 
-ion-icon{
- font-size: 30px;
+
+/*FOOTER*/
+ion-icon {
+  font-size: 30px;
 }
 
-footer ul{
+footer ul {
   list-style: none;
- padding: 0;
- padding-bottom: 1rem;
+  padding: 0;
+  padding-bottom: 1rem;
 }
-footer li a{
-text-decoration: none;
+footer li a {
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.271);
   font-weight: 100;
   font-size: 10px;
 }
-footer li a:hover{
-  text-decoration:underline;
+footer li a:hover {
+  text-decoration: underline;
 }
 
-footer p{
- font-size: 2px;
- font-weight: 100;
+footer p {
+  font-size: 2px;
+  font-weight: 100;
 }

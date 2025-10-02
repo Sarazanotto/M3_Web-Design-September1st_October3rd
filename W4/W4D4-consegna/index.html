@@ -4,25 +4,30 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--FONT-->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
       rel="stylesheet"
     />
+    <!--IONICONS-->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!--SWIPER-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!--BOOTSTRAP-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <!--CSS-->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!--NAV-->
     <nav id="navbar" class="container-fluid px-md-5 py-4">
       <div class="row">
         <div class="col-8 d-flex gap-5">
@@ -129,6 +134,7 @@
       </div>
     </nav>
 
+    <!--HERO-->
     <div class="hero container-fluid position-relative">
       <img class="img-fluid" src="./assets/jumbotron-img.webp" alt="" />
 
@@ -159,309 +165,177 @@
       </div>
     </div>
 
-    <main class="container-fluid">
-      <!--PREMIATE-->
-      <div class="container-title-swiper py-2">
-        <div class="container-title-carousel d-flex align-items-center gap-2">
-          <p class="title-carousel m-0 text-light">Serie tv premiate</p>
+    <!--SWIPER-->
+    <div class="container-fluid">
+      <!--SWIPER-PREMIATI-->
+      <div class="container-title-carousel d-flex align-items-center gap-2">
+        <p class="title-carousel m-0 text-light">Serie tv premiate</p>
 
-          <div class="banana d-flex align-items-center">
-            <a
-              class="see-more text-decoration-none fw-bold m-0 small"
-              href="./indexSeeMore.html"
-              >Sfoglia tutti</a
-            >
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-        </div>
-        <div class="swiper mySwiper position-relative">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="containerCard position-relative">
-                <img class="img-fluid" src="./assets/img-4.jpeg" alt="" />
-                <div class="container-logo-card position-absolute">
-                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
-                </div>
-
-                <div class="card-animation d-flex flex-column align-items-start justify-content-center gap-3 p-1">
-                  <img class="img-fluid" src="./assets/img-4.jpeg" alt="" />
-                  <div class="d-flex gap-5 fs-3 py-2">
-                  <i class="fa-solid fa-circle-play"></i>
-                  <i class="fa-solid fa-plus"></i>
-                  <i class="fa-solid fa-thumbs-up"></i>
-                  </div>
-                  <div class="d-flex gap-2">
-                    <i class="fa-solid fa-rectangle-xmark fs-5"></i>
-                    <p>Tipologia film</p>
-                    <i class="fa-solid fa-rectangle-xmark fs-5"></i>
-                  </div>
-                  <div>
-                    <ul class="d-flex gap-3 list-unstyled">
-                      <li class="small fs-6 ">violento</li>
-                      <li class="small">&bull; thriller</li>
-                      <li class="small">&bull; suspance</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="containerCard position-relative">
-                <img class="img-fluid" src="./assets/img-3.jpg" alt="" />
-                <div class="container-logo-card position-absolute">
-                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
-                </div>
-                 <div class="card-animation d-flex flex-column align-items-start justify-content-center gap-3 p-1">
-                  <img class="img-fluid" src="./assets/img-3.jpg" alt="" />
-                  <div class="d-flex gap-5 fs-3 py-2">
-                  <i class="fa-solid fa-circle-play"></i>
-                  <i class="fa-solid fa-plus"></i>
-                  <i class="fa-solid fa-thumbs-up"></i>
-                  </div>
-                  <div class="d-flex gap-2">
-                    <i class="fa-solid fa-rectangle-xmark fs-5"></i>
-                    <p>Tipologia film</p>
-                    <i class="fa-solid fa-rectangle-xmark fs-5"></i>
-                  </div>
-                  <div>
-                    <ul class="d-flex gap-3 list-unstyled">
-                      <li class="small fs-6 ">violento</li>
-                      <li class="small">&bull; thriller</li>
-                      <li class="small">&bull; suspance</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="containerCard position-relative">
-                <img class="img-fluid" src="./assets/img-5.webp" alt="" />
-                <div class="container-logo-card position-absolute">
-                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
-                </div>
-                 <div class="card-animation d-flex flex-column align-items-start justify-content-center gap-3 p-1">
-                  <img class="img-fluid" src="./assets/img-5.webp" alt="" />
-                  <div class="d-flex gap-5 fs-3 py-2">
-                  <i class="fa-solid fa-circle-play"></i>
-                  <i class="fa-solid fa-plus"></i>
-                  <i class="fa-solid fa-thumbs-up"></i>
-                  </div>
-                  <div class="d-flex gap-2">
-                    <i class="fa-solid fa-rectangle-xmark fs-5"></i>
-                    <p>Tipologia film</p>
-                    <i class="fa-solid fa-rectangle-xmark fs-5"></i>
-                  </div>
-                  <div>
-                    <ul class="d-flex gap-3 list-unstyled">
-                      <li class="small fs-6 ">violento</li>
-                      <li class="small">&bull; thriller</li>
-                      <li class="small">&bull; suspance</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="containerCard position-relative">
-                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
-                <div class="container-logo-card position-absolute">
-                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="containerCard position-relative">
-                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
-                <div class="container-logo-card position-absolute">
-                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="containerCard position-relative">
-                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
-                <div class="container-logo-card position-absolute">
-                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="containerCard position-relative">
-                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
-                <div class="container-logo-card position-absolute">
-                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="containerCard position-relative">
-                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
-                <div class="container-logo-card position-absolute">
-                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="containerCard position-relative">
-                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
-                <div class="container-logo-card position-absolute">
-                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="button-sx swiper-button-next"></div>
-          <div class="button-dx swiper-button-prev"></div>
+        <div class="title-anchor d-flex align-items-center">
+          <a
+            class="see-more text-decoration-none fw-bold m-0 small"
+            href="./indexSeeMore.html"
+            >Sfoglia tutti</a
+          >
+          <i class="fa-solid fa-chevron-right"></i>
         </div>
       </div>
+      <div class="swiper swiper-premiate position-relative">
+        <div class="swiper-wrapper swiper-wrapper-premiate"></div>
 
-      <!--SCELTI PER TE-->
-      <div class="container-title-swiper py-2 py-md-5">
-        <div class="container-title-carousel d-flex align-items-center gap-3">
-          <p class="title-carousel m-0 text-light">Scelti per te oggi</p>
+        <div class="swiper-button-prev arrow-right arrow-r-premiate"></div>
+        <div class="swiper-button-next arrow-left arrow-l-premiate"></div>
+      </div>
+      <!--SWIPER-CERCATI-->
+      <div class="container-title-carousel d-flex align-items-center gap-2">
+        <p class="title-carousel m-0 text-light">I più cercati</p>
 
-          <div class="banana d-flex align-items-center">
-            <a
-              class="see-more text-decoration-none fw-bold m-0 small"
-              href="./indexSeeMore.html"
-              >Sfoglia tutti</a
-            >
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-        </div>
-        <div class="swiper mySwiper position-relative">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="containerCard position-relative">
-                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
-                <div class="container-logo-card position-absolute">
-                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="containerCard position-relative">
-                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
-                <div class="container-logo-card position-absolute">
-                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="containerCard position-relative">
-                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
-                <div class="container-logo-card position-absolute">
-                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="containerCard position-relative">
-                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
-                <div class="container-logo-card position-absolute">
-                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="containerCard position-relative">
-                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
-                <div class="container-logo-card position-absolute">
-                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="containerCard position-relative">
-                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
-                <div class="container-logo-card position-absolute">
-                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="containerCard position-relative">
-                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
-                <div class="container-logo-card position-absolute">
-                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="containerCard position-relative">
-                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
-                <div class="container-logo-card position-absolute">
-                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="containerCard position-relative">
-                <img class="img-fluid" src="./assets/img-2.webp" alt="" />
-                <div class="container-logo-card position-absolute">
-                  <img class="logo-img" src="./assets/N-logo.png" alt="logo" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="button-sx swiper-button-next"></div>
-          <div class="button-dx swiper-button-prev"></div>
+        <div class="title-anchor d-flex align-items-center">
+          <a
+            class="see-more text-decoration-none fw-bold m-0 small"
+            href="./indexSeeMore.html"
+            >Sfoglia tutti</a
+          >
+          <i class="fa-solid fa-chevron-right"></i>
         </div>
       </div>
-    </main>
+      <div class="swiper swiper-cercati position-relative">
+        <div class="swiper-wrapper swiper-wrapper-cercati"></div>
+        <div class="swiper-button-prev arrow-right arrow-r-cercati"></div>
+        <div class="swiper-button-next arrow-left arrow-l-cercati"></div>
+      </div>
 
-<footer class="container px-5 mt-5">
-  <div class="icons-footer">
-    <ion-icon name="logo-facebook"></ion-icon>
-    <ion-icon name="logo-instagram"></ion-icon>
-    <ion-icon name="logo-twitter"></ion-icon>
-    <ion-icon name="logo-youtube"></ion-icon>
-  </div>
-  <div class="row">
-    <div class="col-12 col-md-6 col-lg-3">
-      <ul>
-        <li><a href="">Audiodescrizione</a></li>
-        <li><a href="">Rapporti</a></li>
-        <li><a href="">Note legali</a></li>
-        <li><a href="">Preferenze pubblicità</a></li>
-  
-      </ul>
-    </div>
-    <div class="col-12 col-md-6 col-lg-3">
-      <ul>
-        <li><a href="">Centro assistenza</a></li>
-        <li><a href="">Opportunità di lavoro</a></li>
-        <li><a href="">Preferenze per i cookie</a></li>
-      </ul>
-    </div>
-    <div class="col-12 col-md-6 col-lg-3">
-       <ul>
-        <li><a href="">Carte regalo</a></li>
-        <li><a href="">Condizioni di utilizzo</a></li>
-        <li><a href="">Informazioni sull'azienda</a></li>
-      </ul>
-    </div>
-    <div class="col-12 col-md-6 col-lg-3 ">
-       <ul>
-        <li><a href="">Media center</a></li>
-        <li><a href="">Privacy</a></li>
-        <li><a href="">Contattaci</a></li>
-      </ul>
-    </div>
-  </div>
- 
-</footer>
+      <!--SWIPER-COREANE-->
+      <div class="container-title-carousel d-flex align-items-center gap-2">
+        <p class="title-carousel m-0 text-light">Serie TV coreane</p>
 
+        <div class="title-anchor d-flex align-items-center">
+          <a
+            class="see-more text-decoration-none fw-bold m-0 small"
+            href="./indexSeeMore.html"
+            >Sfoglia tutti</a
+          >
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+      <div class="swiper swiper-coreane position-relative">
+        <div class="swiper-wrapper swiper-wrapper-coreane"></div>
+        <div class="swiper-button-prev arrow-right arrow-r-coreane"></div>
+        <div class="swiper-button-next arrow-left arrow-l-coreane"></div>
+      </div>
 
+     <!-- <div class="swiper swiper-number position-relative">
+        <div class="swiper-wrapper swiper-wrapper-number">
+          <div class="swiper-slide swiper-slide-number"> 
+             <div class="container-svg-img d-flex justify-content-between">
+      <svg viewBox="0 0 100 100">
+        <text
+          x="50%"
+          y="50%"
+          text-anchor="middle"
+          dominant-baseline="central"
+          font-size="200"
+          fill="black"
+          stroke="white"
+          stroke-width="2.5"
+          font-family="Arial"
+          font-weight="bold"
+        >
+          3
+        </text>
+      </svg>
+      <div class="container-img"><img class="img-fluid" src="https://occ-0-1927-778.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYz2OpnlrH3L0rzM4YrrSQh_qBgPzIjRIkxocosZZgtiJv03Ru6xvWCRE2Fw9sW34tEj9RLT7ad--gZutWY3Nblhd8zYfqcgTKTdkcjxTBNmkGW7b4-yjuZuCEAkujF61Wd08Necc1KZzMVSXfUMEozJEUnuqWtB0A31P6noNiBg12pvVk5levlmpjgRKkt4xus_u01Oo-aFrjoT.jpg?r=242" alt=""></div>
+      </div></div>
+          <div class="swiper-slide swiper-slide-number"> slide1</div>
+          <div class="swiper-slide swiper-slide-number"> slide1</div>
+          <div class="swiper-slide swiper-slide-number">Slide 2</div>
+          <div class="swiper-slide swiper-slide-number">Slide 2</div>
+          <div class="swiper-slide swiper-slide-number">Slide 2</div>
+          <div class="swiper-slide swiper-slide-number">Slide 3</div>
+          <div class="swiper-slide swiper-slide-number">Slide 3</div>
+          <div class="swiper-slide swiper-slide-number">Slide 3</div>
+        </div>
+        <div class="swiper-button-prev arrow-right arrow-r-number"></div>
+        <div class="swiper-button-next arrow-left arrow-l-number"></div>
+      </div>
 
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+      <div class="container-svg-img bg-danger">
+      <svg width="250" height="250">
+        <text
+          x="50%"
+          y="50%"
+          text-anchor="middle"
+          dominant-baseline="central"
+          font-size="250"
+          fill="black"
+          stroke="white"
+          stroke-width="2.5"
+          font-family="Arial"
+          font-weight="bold"
+        >
+          3
+        </text>
+      </svg>
+      <div class="container-img"><img src="https://occ-0-1927-778.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYz2OpnlrH3L0rzM4YrrSQh_qBgPzIjRIkxocosZZgtiJv03Ru6xvWCRE2Fw9sW34tEj9RLT7ad--gZutWY3Nblhd8zYfqcgTKTdkcjxTBNmkGW7b4-yjuZuCEAkujF61Wd08Necc1KZzMVSXfUMEozJEUnuqWtB0A31P6noNiBg12pvVk5levlmpjgRKkt4xus_u01Oo-aFrjoT.jpg?r=242" alt=""></div>
+      </div>-->
+    </div>
+   
+
+    <footer class="container px-5 mt-5">
+      <div class="icons-footer">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-youtube"></ion-icon>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+          <ul>
+            <li><a href="">Audiodescrizione</a></li>
+            <li><a href="">Rapporti</a></li>
+            <li><a href="">Note legali</a></li>
+            <li><a href="">Preferenze pubblicità</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <ul>
+            <li><a href="">Centro assistenza</a></li>
+            <li><a href="">Opportunità di lavoro</a></li>
+            <li><a href="">Preferenze per i cookie</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <ul>
+            <li><a href="">Carte regalo</a></li>
+            <li><a href="">Condizioni di utilizzo</a></li>
+            <li><a href="">Informazioni sull'azienda</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <ul>
+            <li><a href="">Media center</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Contattaci</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!--SWIPER-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!--BOOTSTRAP-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!--ICONE-->
     <script
       src="https://kit.fontawesome.com/c31b4495af.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--JS-->
     <script src="./main.js"></script>
   </body>
 </html>
